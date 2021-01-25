@@ -126,7 +126,7 @@
       }
     ],
     "external": [
-      "https://github.com/davifelix5/nextjs-quiz",
+      "https://github.com/davifelix5/quiz-with-nextjs",
       "https://github.com/omariosouto/aluraquiz-base-1"
     ],
     "theme": {
