@@ -1,12 +1,144 @@
 {
+    "bg": "/img/background.png",
+    "title": "Marvel Studios",
+    "description": "Teste os seus conhecimentos sobre o universo Marvel e divirta-se criando o seu AluraQuiz!",
+    "author": "Davi Félix",
+    "questions": [
+      {
+        "image": "/img/question1.png",
+        "title": "Quando foi lançado o primeiro filmes do Homem de Ferro?",
+        "description": "Considere somente os filmes novos da Marvel",
+        "answer": 3,
+        "alternatives": [
+          "2020",
+          "2019",
+          "2015",
+          "2008"
+        ]
+      },
+      {
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcY_7cxzMzHWcU_mhx5Pz5WndclIpA1gPLIw&usqp=CAU",
+        "title": "Qual é o nome do martelo de Thor?",
+        "description": "Essa é tranquila",
+        "answer": 0,
+        "alternatives": [
+          "Mjolnir",
+          "Vanir",
+          "Aesir",
+          "Norn"
+        ]
+      },
+      {
+        "image": "https://cdn.vox-cdn.com/thumbor/VkpKrpL9Wv5-9vnyidQEzA96qis=/0x0:1920x815/920x613/filters:focal(639x188:945x494):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66476466/GeneralRoss_TIH.0.png",
+        "title": "No Incrível Hulk, o que Tony diz a Thaddeus Ross no final do filme?",
+        "description": "Um pouco mais específica...",
+        "answer": 2,
+        "alternatives": [
+          "Que ele quer estudar o Hulk",
+          "Que ele sabe sobre a SHIELD",
+          "Que eles estão montando uma equipe",
+          "Que Thaddeus lhe deve dinheiro"
+        ]
+      },
+      {
+        "image": "https://cdn.falauniversidades.com.br/wp-content/uploads/2020/06/12120218/Captain-America-in-Avengers-Endgame-e1591974169632.jpg",
+        "title": "Do que é feito o escudo do Capitão América?",
+        "description": "Essa é para os fãs de verdade",
+        "answer": 1,
+        "alternatives": [
+          "Adamantium",
+          "Vibranium",
+          "Promécio",
+          "Carbonádio"
+        ]
+      },
+      {
+        "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/vision_1.jpg",
+        "title": "Antes de se tornar Vision, qual é o nome do mordomo de IA do Homem de Ferro?",
+        "description": "Nem é tão difícil, vai!",
+        "answer": 1,
+        "alternatives": [
+          "HOMER",
+          "JARVIS",
+          "ALFRED",
+          "MARVIN"
+        ]
+      },
+      {
+        "image": "https://cdn3.movieweb.com/i/article/yqY67ISVpYdlbPE2s1H2vLiQ6xrHR8/798:75/Spider-Man-Homecoming-Peter-Parker-Washington-Dc.jpg",
+        "title": "De que ponto de vista Peter Parker resgata seus colegas de classe em Spider-Man: Homecoming?",
+        "description": "Outra mais recente",
+        "answer": 0,
+        "alternatives": [
+          "Washington Monument",
+          "Estátua da Liberdade",
+          "Mount Rushmore",
+          "Golden Gate Bridge"
+        ]
+      },
+      {
+        "image": "https://bbts1.azureedge.net/images/p/full/2018/05/fe70318a-af0b-43e7-8473-8e38ab0dd8cc.jpg",
+        "title": "Qual é a raça alienígena que Loki envia para invadir a Terra em Os Vingadores?",
+        "description": "Vamos exercitar a memória",
+        "answer": 3,
+        "alternatives": [
+          "Os skrulls",
+          "The Kree",
+          "The Flerkens",
+          "Os Chitauri"
+        ]
+      },
+      {
+        "image": "https://i0.wp.com/diaadiaes.com.br/wp-content/uploads/2020/09/Chadwick-Boseman.jpeg?resize=960%2C550&ssl=1",
+        "title": "Qual é o verdadeiro nome da Pantera Negra?",
+        "description": "Uma de presente",
+        "answer": 0,
+        "alternatives": [
+          "T'Challa",
+          "M'Baku",
+          "N'Jadaka",
+          "N'Jobu"
+        ]
+      },
+      {
+        "image": "https://tecnoblog.net/wp-content/uploads/2019/04/thanos-manopla-do-infinito-700x393.jpeg",
+        "title": "Quem foi o último detentor do Pedra do espaço antes de Thanos reivindicá-lo por sua Manopla do Infinito?",
+        "description": "Essa é mais recente!",
+        "answer": 1,
+        "alternatives": [
+          "Thor",
+          "Loki",
+          "O Colecionador",
+          "Tony Stark"
+        ]
+      },
+      {
+        "image": "https://www.einerd.com.br/wp-content/uploads/2019/07/Vi%C3%BAva-Negra-filme-capa-890x466.jpg",
+        "title": "Qual nome falso Natasha usa quando conhece Tony?",
+        "description": "Só mais uma!",
+        "answer": 1,
+        "alternatives": [
+          "Natalia Romanoff",
+          "Natalie Rushman",
+          "Nicole Rohan",
+          "Naya Rabe"
+        ]
+      }
+    ],
+    "external": [
+      "https://github.com/davifelix5/nextjs-quiz",
+      "https://github.com/omariosouto/aluraquiz-base-1"
+    ],
     "theme": {
       "colors": {
-        "primary": "#0d47a1",
-        "secondary": "#29b6f6",
+        "primary": "#3F51B5",
+        "primaryDark": "#182d5d",
+        "secondary": "#E91E63",
         "mainBg": "#171B35",
-        "contrastText": "#FFFFFF",
+        "contrastText": "#F9F9F9",
         "wrong": "#FF5722",
-        "success": "#4CAF50"
+        "success": "#4CAF50",
+        "disabled": "#979797"
       },
       "borderRadius": "4px"
     }

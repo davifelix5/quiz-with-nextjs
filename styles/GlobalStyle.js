@@ -9,6 +9,16 @@ const GlobalStyle = createGlobalStyle`
     min-height: 100vh;
   }
 
+  a {
+    text-decoration: none;
+    color: unset;
+  }
+
+  button {
+    border: none;
+    cursor: pointer;
+  }
+
   body {
     margin: 0;
     padding: 0;
