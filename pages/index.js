@@ -40,9 +40,8 @@ export default function Home() {
             {data.external.map((item) => {
               const [, , , ...display] = item.split('/');
               return (
-                <li>
+                <li key={item}>
                   <a
-                    key={item}
                     href={item}
                     target="_blank"
                     rel="noreferrer noopener"

@@ -3,6 +3,7 @@
     "title": "Marvel Studios",
     "description": "Teste os seus conhecimentos sobre o universo Marvel e divirta-se criando o seu AluraQuiz!",
     "author": "Davi Félix",
+    "placeholder": "https://via.placeholder.com/300x200/182D5D?text=Carregando",
     "questions": [
       {
         "image": "/img/question1.png",

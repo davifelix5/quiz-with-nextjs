@@ -1,10 +1,12 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 import data from '../data.json';
 
 import Widget from '../src/components/Widget';
+import QuestionWidget from '../src/components/QuestionWidget';
+import Loader from '../src/components/Loader';
 
 export default function Quiz() {
   const router = useRouter();
@@ -12,6 +14,7 @@ export default function Quiz() {
   const { questions } = data;
   const { query: { playerName } } = useRouter();
   const totalQuestions = questions.length;
+  const [loading, setLoading] = useState(true);
   const [nextTimeout, setNextTimeout] = useState(null);
   const [rightQuestions, setRightQuestions] = useState(0);
   const [index, setIndex] = useState(0);
@@ -19,21 +22,15 @@ export default function Quiz() {
   const [answered, setAnswered] = useState(false);
   const [isAnswerRight, setIsAnswerRight] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 1 * 1000);
+  }, [index]);
+
   function checkAnswer(alternative) {
     const question = questions[index];
     return alternative === question.alternatives[question.answer];
-  }
-
-  function getAlternativeClass(alternative) {
-    const question = questions[index];
-    if (!answered) { return alternative === selected ? 'selected' : ''; }
-
-    if (isAnswerRight) { return alternative === selected ? 'selected-right' : ''; }
-
-    if (alternative === selected) { return 'selected-wrong'; }
-    if (alternative === question.alternatives[question.answer]) { return 'selected-right'; }
-
-    return null;
   }
 
   function handleNextQuestion() {
@@ -42,6 +39,7 @@ export default function Quiz() {
       setSelected(null);
       setAnswered(false);
       setIsAnswerRight(false);
+      setLoading(true);
     } else {
       router.push({
         pathname: '/results',
@@ -59,7 +57,8 @@ export default function Quiz() {
     handleNextQuestion();
   }
 
-  function handleAnswer() {
+  function handleSubmit(e) {
+    e.preventDefault();
     const isAnswerCorrect = checkAnswer(selected);
     if (isAnswerCorrect) setRightQuestions(rightQuestions + 1);
     setAnswered(true);
@@ -81,37 +80,24 @@ export default function Quiz() {
           {totalQuestions}
         </p>
       </Widget.Header>
-      <img alt={questions[index].title} src={questions[index].image} />
+      {loading && <img alt={questions[index].title} src={data.placeholder} />}
+      <img
+        alt={questions[index].title}
+        src={questions[index].image}
+        style={{ display: loading ? 'none' : 'block' }}
+      />
       <Widget.Content>
-        <h1>{questions[index].title}</h1>
-        <p>{questions[index].description}</p>
-        <Widget.List>
-          {questions[index].alternatives.map((alternative) => (
-            <li
-              key={alternative}
-              className={`alternative ${getAlternativeClass(alternative)}`}
-              onClick={() => !answered && setSelected(alternative)}
-            >
-              {alternative}
-            </li>
-          ))}
-        </Widget.List>
-        {!answered && (
-          <Widget.ConfirmButton
-            disabled={!selected}
-            onClick={handleAnswer}
-          >
-            CONFIRMAR
-          </Widget.ConfirmButton>
-        )}
-        {answered && (
-          <Widget.ResultButton
-            onClick={handleClickNext}
-            answerRight={isAnswerRight}
-          >
-            &gt;
-          </Widget.ResultButton>
-        )}
+        {!loading ? (
+          <QuestionWidget
+            question={questions[index]}
+            answered={answered}
+            isAnswerRight={isAnswerRight}
+            selected={selected}
+            setSelected={setSelected}
+            onSubmit={handleSubmit}
+            onClickNext={handleClickNext}
+          />
+        ) : <Loader />}
       </Widget.Content>
     </Widget>
   );

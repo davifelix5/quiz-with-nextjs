@@ -92,20 +92,6 @@ Widget.ConfirmButton = styled.button`
   }
 `;
 
-Widget.ResultButton = styled.button`
-  align-self: center;
-  color: white;
-  width: 30px;
-  height: 30px;
-  margin: unset auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  background-color: ${({ answerRight, theme }) => (answerRight ? theme.colors.success : theme.colors.wrong)}
-
-`;
-
 Widget.List = styled.ul`
     list-style: none;
     padding: 0;
@@ -113,7 +99,6 @@ Widget.List = styled.ul`
       cursor: pointer;
       border-radius: ${({ theme }) => theme.borderRadius};
       background-color: ${({ theme }) => theme.colors.primaryDark};
-
       & + li {
         margin-top: 8px;
       }
@@ -126,24 +111,6 @@ Widget.List = styled.ul`
       &:hover a {
         text-decoration: underline;
       }
-    }
-
-    li.alternative {
-        padding: 14px;
-      }
-      
-    li.selected {
-      background-color: ${({ theme }) => theme.colors.primary}
-    }
-
-    li.selected-right {
-      background-color: ${({ theme }) => theme.colors.success}
-
-    }
-
-    li.selected-wrong {
-      background-color: ${({ theme }) => theme.colors.wrong}
-
     }
 
 `;
