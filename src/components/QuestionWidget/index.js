@@ -37,6 +37,7 @@ export default function QuestionWidget({
               type="radio"
               name="selected-question"
               id={`question__${altIndex}`}
+              disabled={answered}
               onInput={(e) => e.target.checked && setSelected(alternative)}
             />
           </label>

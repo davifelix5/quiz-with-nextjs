@@ -27,13 +27,8 @@ const ResultsList = styled.ul`
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            &:first-child {
-                flex-direction: row;
-            }
-            span {
-                font-size: 12px;
-            }
-            div {
+            span.medal {
+                display: block;
                 font-weight: bolder;
                 display: flex;
                 align-items: center;
@@ -45,6 +40,12 @@ const ResultsList = styled.ul`
                 background-color: ${({ theme }) => theme.colors.primary};
                 margin-right: 10px;
             }
+            &:first-child {
+                flex-direction: row;
+            }
+            span {
+                font-size: 12px;
+            }
         }
         display: flex;
         justify-content: space-between;
@@ -53,7 +54,7 @@ const ResultsList = styled.ul`
         padding: 5px 10px;
         &.highlight {
             background-color: ${({ theme }) => theme.colors.primary};
-            p div {
+            p span.medal {
                 border: 3px solid ${({ theme }) => theme.colors.textContrast};
             }
         }

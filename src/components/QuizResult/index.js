@@ -1,24 +1,19 @@
 import React, { useRef, useState } from 'react';
-import { useRouter } from 'next/router';
 
 import Link from 'next/link';
-import Widget from '../src/components/Widget';
-import ResultsList from '../src/components/ResultsList';
+import Widget from '../Widget';
+import ResultsList from '../ResultsList';
 
-import useInterval from '../src/hooks/useInterval';
+import useInterval from '../../hooks/useInterval';
 
-import data from '../data.json';
+import data from '../../../data.json';
 
-export default function Results() {
+export default function QuizResult({
+  playerName,
+  rights,
+  total,
+}) {
   const [delay, setDelay] = useState(100);
-
-  const {
-    query: {
-      playerName,
-      rights,
-      total,
-    },
-  } = useRouter();
 
   const currentPlayer = useRef(null);
 
@@ -72,7 +67,7 @@ export default function Results() {
               ref={item.playerName === playerName ? currentPlayer : null}
             >
               <p>
-                <div>{index + 1}</div>
+                <span className="medal">{index + 1}</span>
                 {item.playerName}
               </p>
               <p>
