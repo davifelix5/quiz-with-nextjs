@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
-  max-width: 350px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme }) => theme.colors.mainBg};
   border-radius: 4px;
@@ -23,13 +22,13 @@ const Widget = styled.div`
     width: 100%;
   }
 `;
+
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   display: flex;
   flex-direction: column;
   p {
     line-height: 1.5;
-    margin-bottom: 24px;
     font-size: 16px;
   }
   & > *:first-child {
@@ -53,6 +52,27 @@ Widget.Content = styled.div`
   input:focus {
     border-color: ${({ theme }) => theme.colors.secondary};
     outline: none;
+  }
+`;
+
+Widget.ResultContent = styled(Widget.Content)`
+  h1 {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 20px
+  }
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  a {
+    text-decoration: none;
+    color: #9CA9EF;
+    font-weight: bold;
+    align-self: center;
   }
 `;
 

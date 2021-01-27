@@ -4,12 +4,17 @@ import data from '../data.json';
 import Widget from '../src/components/Widget';
 
 export default function Home() {
-  const [name, setName] = useState('teste');
+  const [name, setName] = useState('');
   const router = useRouter();
 
   function handleSubmit(e) {
     e.preventDefault();
-    router.push(`quiz/?playerName=${name}`);
+    router.push({
+      pathname: '/quiz',
+      query: {
+        playerName: name,
+      },
+    });
   }
   return (
     <>
@@ -21,7 +26,7 @@ export default function Home() {
           <form onSubmit={handleSubmit}>
             <p>{data.description}</p>
             <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-            <Widget.ConfirmButton>
+            <Widget.ConfirmButton disabled={!name}>
               JOGAR
             </Widget.ConfirmButton>
           </form>

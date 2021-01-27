@@ -10,6 +10,7 @@ export default function Quiz() {
   const router = useRouter();
 
   const { questions } = data;
+  const { query: { playerName } } = useRouter();
   const totalQuestions = questions.length;
   const [nextTimeout, setNextTimeout] = useState(null);
   const [rightQuestions, setRightQuestions] = useState(0);
@@ -42,7 +43,14 @@ export default function Quiz() {
       setAnswered(false);
       setIsAnswerRight(false);
     } else {
-      router.push('results');
+      router.push({
+        pathname: '/results',
+        query: {
+          playerName,
+          rights: rightQuestions,
+          total: totalQuestions,
+        },
+      });
     }
   }
 
@@ -53,7 +61,7 @@ export default function Quiz() {
 
   function handleAnswer() {
     const isAnswerCorrect = checkAnswer(selected);
-    if (isAnswerRight) setRightQuestions(rightQuestions + 1);
+    if (isAnswerCorrect) setRightQuestions(rightQuestions + 1);
     setAnswered(true);
     setIsAnswerRight(isAnswerCorrect);
     setNextTimeout(setTimeout(handleNextQuestion, 2000));
