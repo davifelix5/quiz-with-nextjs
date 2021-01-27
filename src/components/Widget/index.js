@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -22,7 +22,7 @@ const Widget = styled.div`
   img {
     width: 100%;
   }
-`
+`;
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   display: flex;
@@ -42,23 +42,23 @@ Widget.Content = styled.div`
     margin-top: 10px;
   }
   input {
-    color: ${({theme}) => theme.colors.contrastText};
-    background-color: ${({theme}) => theme.colors.mainBg};
+    color: ${({ theme }) => theme.colors.contrastText};
+    background-color: ${({ theme }) => theme.colors.mainBg};
     padding: 10px 16px;
     font-size: 14px;
-    border-radius: ${({theme}) => theme.borderRadius};
-    border: 1px solid ${({theme}) => theme.colors.primary};
+    border-radius: ${({ theme }) => theme.borderRadius};
+    border: 1px solid ${({ theme }) => theme.colors.primary};
     width: 100%;
   }
   input:focus {
-    border-color: ${({theme}) => theme.colors.secondary};
+    border-color: ${({ theme }) => theme.colors.secondary};
     outline: none;
   }
-`
+`;
 
 Widget.ConfirmButton = styled.button`
-  background-color: ${({theme}) => theme.colors.secondary};
-  color: ${({theme}) => theme.colors.contrastText};
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.contrastText};
   padding: 10px 16px;
   width: 100%;
   letter-spacing: 2px;
@@ -68,9 +68,9 @@ Widget.ConfirmButton = styled.button`
     opacity: 0.8;
   }
   &:disabled {
-    background-color: ${({theme}) => theme.colors.disabled}
+    background-color: ${({ theme }) => theme.colors.disabled}
   }
-` 
+`;
 
 Widget.ResultButton = styled.button`
   align-self: center;
@@ -82,17 +82,17 @@ Widget.ResultButton = styled.button`
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: ${({answerRight, theme}) => answerRight ? theme.colors.success: theme.colors.wrong}
+  background-color: ${({ answerRight, theme }) => (answerRight ? theme.colors.success : theme.colors.wrong)}
 
-`
+`;
 
 Widget.List = styled.ul`
     list-style: none;
     padding: 0;
     li {
       cursor: pointer;
-      border-radius: ${({theme}) => theme.borderRadius};
-      background-color: ${({theme}) => theme.colors.primaryDark};
+      border-radius: ${({ theme }) => theme.borderRadius};
+      background-color: ${({ theme }) => theme.colors.primaryDark};
 
       & + li {
         margin-top: 8px;
@@ -113,20 +113,20 @@ Widget.List = styled.ul`
       }
       
     li.selected {
-      background-color: ${({theme}) => theme.colors.primary}
+      background-color: ${({ theme }) => theme.colors.primary}
     }
 
     li.selected-right {
-      background-color: ${({theme}) => theme.colors.success}
+      background-color: ${({ theme }) => theme.colors.success}
 
     }
 
     li.selected-wrong {
-      background-color: ${({theme}) => theme.colors.wrong}
+      background-color: ${({ theme }) => theme.colors.wrong}
 
     }
 
-`
+`;
 
 Widget.Header = styled.header`
   display: flex;
@@ -148,6 +148,6 @@ Widget.Header = styled.header`
     font-size: 16px;
     color: white;
   }
-`
+`;
 
 export default Widget;

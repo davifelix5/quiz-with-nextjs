@@ -1,5 +1,5 @@
-import data from '../data.json'
+import data from '../data.json';
 
-const theme = data.theme
+const { theme } = data;
 
-export default theme
+export default theme;
