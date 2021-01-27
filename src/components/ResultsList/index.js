@@ -8,6 +8,19 @@ const ResultsList = styled.ul`
     border-radius: ${({ theme }) => theme.borderRadius};
     padding: 5px 10px 5px 5px;
     margin-bottom: 25px;
+    ::-webkit-scrollbar {
+        all: unset;
+        width: 5px;
+    }
+    ::-webkit-scrollbar-track {
+        background: ${({ theme }) => theme.colors.primaryDark};
+        border-radius: ${({ theme }) => theme.borderRadius};
+    }
+    ::-webkit-scrollbar-thumb {
+        all: unset;
+        background: ${({ theme }) => theme.colors.primary};
+        border-radius: ${({ theme }) => theme.borderRadius};
+    }
     li {
         p {
             display: flex;

@@ -1,13 +1,17 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useRouter } from 'next/router';
 
 import Link from 'next/link';
 import Widget from '../src/components/Widget';
 import ResultsList from '../src/components/ResultsList';
 
+import useInterval from '../src/hooks/useInterval';
+
 import data from '../data.json';
 
 export default function Results() {
+  const [delay, setDelay] = useState(100);
+
   const {
     query: {
       playerName,
@@ -15,6 +19,17 @@ export default function Results() {
       total,
     },
   } = useRouter();
+
+  const currentPlayer = useRef(null);
+
+  function scrollToPlayerPosition() {
+    if (currentPlayer.current) {
+      currentPlayer.current.scrollIntoView();
+      setDelay(null);
+    }
+  }
+
+  useInterval(scrollToPlayerPosition, delay);
 
   const isRegistered = data.results.map((item) => item.playerName).includes(playerName);
 
@@ -51,7 +66,11 @@ export default function Results() {
         </h1>
         <ResultsList>
           {orderedResults.map((item, index) => (
-            <li key={item.playerName} className={playerName === item.playerName ? 'highlight' : ''}>
+            <li
+              key={item.playerName}
+              className={playerName === item.playerName ? 'highlight' : ''}
+              ref={item.playerName === playerName ? currentPlayer : null}
+            >
               <p>
                 <div>{index + 1}</div>
                 {item.playerName}
@@ -68,7 +87,7 @@ export default function Results() {
           ))}
         </ResultsList>
         <Link href="/">
-          Voltar para a home
+          Voltar para a Home
         </Link>
       </Widget.ResultContent>
     </Widget>
