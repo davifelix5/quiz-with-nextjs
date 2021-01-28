@@ -1,13 +1,13 @@
 {
     "bg": "https://wallpaperplay.com/walls/full/c/3/f/8159.jpg",
     "title": "Astroquiz",
-    "description": "Teste os seus conhecimentos sobre o fascinante Universo que nos rodeia! Aproveite",
+    "description": "Teste os seus conhecimentos sobre o fascinante Universo que nos rodeia!",
     "author": "Davi Félix",
     "questions": [
       {
         "image": "https://s.itl.cat/pngfile/s/7-78236_download-wallpaper-universo-fondo-de-pantalla-hd.jpg",
         "title": "Qual é a galáxia espiral mais próxima de nós? ",
-        "description": "É sempre bom conhecer a nossa vizinhança! A galáxia espiral mais próxima está a 2 milhoões de anos-luz",
+        "description": "A galáxia espiral mais próxima está a 2.9 milhões de anos-luz, com magnitude aparente de 3.44",
         "answer": 0,
         "alternatives": [
           "Galáxia de Andrômeda",
@@ -17,15 +17,15 @@
         ]
       },
       {
-        "image": "https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/equacaorelatividade.jpg",
-        "title": "Qual teoria de Einstein se limita a referenciais inerciais?",
-        "description": "Teoria famosa por explodir a mente de quem estuda!",
-        "answer": 3,
+        "image": "https://unidospelaastronomia.files.wordpress.com/2016/05/4513274825_7b6a541d15.jpg?w=474&h=316",
+        "title": "Quanto maior a magnitude de um corpo celeste...",
+        "description": "",
+        "answer": 2,
         "alternatives": [
-          "Teoria da Relatividade Geral",
-          "Lei de Einstein",
-          "Lei de Gravidade",
-          "Teoria da Relatividade Restrita"
+          "Mais ele brilha",
+          "Mais longe ele está",
+          "Menos ele brilha",
+          "Maior ele é"
         ]
       },
       {
@@ -67,7 +67,7 @@
       {
         "image": "https://s.calendarr.com/upload/articles/rv/or/rvore-mostrando-alteracao-das-estacoes.jpg",
         "title": "Qual fator permite a ocorrência das estações do ano?",
-        "description": "Outra mais recente",
+        "description": "É interessante aprender as causas de elementos tão corriqueiros em nossas vidas",
         "answer": 0,
         "alternatives": [
           "Inclinação do eixo de rotação terreste",
@@ -77,21 +77,21 @@
         ]
       },
       {
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Planets2013-unlabeled.jpg/360px-Planets2013-unlabeled.jpg",
-        "title": "Qual planeta funciona como um 'escudo gravitacional' contra asteróides para a Terra",
-        "description": "A foto acima mostra as classes no chamado Diagrama de Hertzsprung-Russell (HR)",
-        "answer": 3,
+        "image": "https://museuabertodeastronomia.com.br/wp-content/uploads/2020/05/WhatsApp-Image-2020-05-13-at-17.53.59-300x163.jpeg",
+        "title": "Qual foi a primeira sonda a sair do Sistema Solar?",
+        "description": "Importante ressaltar que estudar certos aspectos de nossas proximidades se faz mais trabalhoso do que em galáxias distantes",
+        "answer": 1,
         "alternatives": [
-          "Saturno",
-          "Marte",
-          "Vênus",
-          "Júpiter"
+          "Saturn V",
+          "Voyager 1",
+          "Pionner 10",
+          "Pioneer 11"
         ]
       },
       {
         "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/1040228-linha-de-ondas-sonoras-coloridas-gr%C3%A1tis-vetor.jpg",
         "title": "Qual é o caráter da onda sonora?",
-        "description": "Uma de presente",
+        "description": "As ondas sonoras não se porpagam no vácuo!",
         "answer": 0,
         "alternatives": [
           "Mecânica",
@@ -126,8 +126,8 @@
       },
       {
         "image": "https://s2.glbimg.com/aThY70s6tVfiAxsXeFtqa1n2FdU=/e.glbimg.com/og/ed/f/original/2016/07/20/apollo_11.jpg",
-        "title": "Durante a missão Apollo 11, qual astronauta permaneceu no Módulo Lunar",
-        "description": "Famosa no Hemifério Sul e importantíssima para a lozalição a partir do céu noturno!",
+        "title": "Durante a missão Apollo 11, qual astronauta permaneceu no Módulo Lunar?",
+        "description": "Mesmo sem pisar na Lua, deve ter sido um grande privilégio ter feito parte dessa missão histórica",
         "answer": 1,
         "alternatives": [
           "Elon Musk",
@@ -138,8 +138,8 @@
       },
       {
         "image": "https://exame.com/wp-content/uploads/2019/04/2019-04-10t000000z_756580842_rc1e1df4e410_rtrmadp_3_space-exploration-blackhole.jpg?quality=70&strip=info&resize=680,453",
-        "title": "Em que ano foi tirada a primeira doto de um buraco negro",
-        "description": "Katie Bouman permite um feito histórico para a ciência: a captação da imagem de um buraco negro!",
+        "title": "Em que ano foi tirada a primeira doto de um buraco negro?",
+        "description": "Katie Bouman permitiu um feito histórico para a ciência: a captação da imagem de um buraco negro!",
         "answer": 3,
         "alternatives": [
           "1998",
