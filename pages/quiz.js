@@ -5,6 +5,7 @@ import data from '../data.json';
 
 import QuizResult from '../src/components/QuizResult';
 import QuizComponent from '../src/components/Quiz';
+import MainWrapper from '../src/components/MainWrapper';
 
 export default function Quiz() {
   const { questions } = data;
@@ -14,7 +15,7 @@ export default function Quiz() {
   const [rightQuestions, setRightQuestions] = useState(0);
 
   return (
-    <>
+    <MainWrapper>
       {!finished ? (
         <QuizComponent
           setFinished={setFinished}
@@ -24,6 +25,6 @@ export default function Quiz() {
       ) : (
         <QuizResult playerName={playerName} rights={rightQuestions} total={totalQuestions} />
       )}
-    </>
+    </MainWrapper>
   );
 }

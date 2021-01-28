@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
+
 import data from '../data.json';
-import Widget from '../src/components/Widget';
+
+import PlayForm from '../src/components/PlayForm';
+import External from '../src/components/External';
+import MainWrapper from '../src/components/MainWrapper';
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -17,43 +21,15 @@ export default function Home() {
     });
   }
   return (
-    <>
-      <Widget>
-        <Widget.Header>
-          <h1>{data.title}</h1>
-        </Widget.Header>
-        <Widget.Content>
-          <form onSubmit={handleSubmit}>
-            <p>{data.description}</p>
-            <input type="text" value={name} onChange={(e) => setName(e.target.value)} />
-            <Widget.ConfirmButton disabled={!name}>
-              JOGAR
-            </Widget.ConfirmButton>
-          </form>
-        </Widget.Content>
-      </Widget>
-      <Widget>
-        <Widget.Content>
-          <h1>Quizes da galera</h1>
-          <p>Aqui estão alguns exemplos de outros quizes feitos pela galera</p>
-          <Widget.List>
-            {data.external.map((item) => {
-              const [, , , ...display] = item.split('/');
-              return (
-                <li key={item}>
-                  <a
-                    href={item}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                  >
-                    {display.join('/')}
-                  </a>
-                </li>
-              );
-            })}
-          </Widget.List>
-        </Widget.Content>
-      </Widget>
-    </>
+    <MainWrapper>
+      <PlayForm
+        value={name}
+        setValue={setName}
+        title={data.title}
+        description={data.description}
+        onSubmit={handleSubmit}
+      />
+      <External external={data.external} />
+    </MainWrapper>
   );
 }
