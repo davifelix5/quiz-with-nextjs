@@ -33,7 +33,7 @@ ResultContent.List = styled.ul`
     overflow-y: scroll;
     border: 1px solid ${({ theme }) => theme.colors.primary};
     border-radius: ${({ theme }) => theme.borderRadius};
-    padding: 5px 10px 5px 5px;
+    padding: 5px;
     margin-bottom: 25px;
     ::-webkit-scrollbar {
         all: unset;

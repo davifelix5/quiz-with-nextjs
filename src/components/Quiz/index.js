@@ -11,6 +11,8 @@ export default function Quiz({
   setFinished,
   rightQuestions, setRightQuestions,
 }) {
+  const placeHolderColorCode = data.theme.colors.primaryDark.replace('#', '');
+  const placeHolderLink = `https://via.placeholder.com/300x200/${placeHolderColorCode}?text=Carregando`;
   const { questions } = data;
   const totalQuestions = questions.length;
   const [loading, setLoading] = useState(true);
@@ -71,7 +73,7 @@ export default function Quiz({
           {totalQuestions}
         </p>
       </Widget.Header>
-      {loading && <img alt={questions[index].title} src={data.placeholder} />}
+      {loading && <img alt={questions[index].title} src={placeHolderLink} />}
       <img
         alt={questions[index].title}
         src={questions[index].image}

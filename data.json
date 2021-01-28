@@ -1,128 +1,151 @@
 {
-    "bg": "/img/background.png",
-    "title": "Marvel Studios",
-    "description": "Teste os seus conhecimentos sobre o universo Marvel e divirta-se criando o seu AluraQuiz!",
+    "bg": "https://wallpaperplay.com/walls/full/c/3/f/8159.jpg",
+    "title": "Astroquiz",
+    "description": "Teste os seus conhecimentos sobre o fascinante Universo que nos rodeia! Aproveite",
     "author": "Davi Félix",
-    "placeholder": "https://via.placeholder.com/300x200/182D5D?text=Carregando",
     "questions": [
       {
-        "image": "/img/question1.png",
-        "title": "Quando foi lançado o primeiro filmes do Homem de Ferro?",
-        "description": "Considere somente os filmes novos da Marvel",
-        "answer": 3,
-        "alternatives": [
-          "2020",
-          "2019",
-          "2015",
-          "2008"
-        ]
-      },
-      {
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcY_7cxzMzHWcU_mhx5Pz5WndclIpA1gPLIw&usqp=CAU",
-        "title": "Qual é o nome do martelo de Thor?",
-        "description": "Essa é tranquila",
+        "image": "https://s.itl.cat/pngfile/s/7-78236_download-wallpaper-universo-fondo-de-pantalla-hd.jpg",
+        "title": "Qual é a galáxia espiral mais próxima de nós? ",
+        "description": "É sempre bom conhecer a nossa vizinhança! A galáxia espiral mais próxima está a 2 milhoões de anos-luz",
         "answer": 0,
         "alternatives": [
-          "Mjolnir",
-          "Vanir",
-          "Aesir",
-          "Norn"
+          "Galáxia de Andrômeda",
+          "Galáxia do Triângulo",
+          "Galáxia Centaurus",
+          "Galáxia do Bode"
         ]
       },
       {
-        "image": "https://cdn.vox-cdn.com/thumbor/VkpKrpL9Wv5-9vnyidQEzA96qis=/0x0:1920x815/920x613/filters:focal(639x188:945x494):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/66476466/GeneralRoss_TIH.0.png",
-        "title": "No Incrível Hulk, o que Tony diz a Thaddeus Ross no final do filme?",
-        "description": "Um pouco mais específica...",
+        "image": "https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/equacaorelatividade.jpg",
+        "title": "Qual teoria de Einstein se limita a referenciais inerciais?",
+        "description": "Teoria famosa por explodir a mente de quem estuda!",
+        "answer": 3,
+        "alternatives": [
+          "Teoria da Relatividade Geral",
+          "Lei de Einstein",
+          "Lei de Gravidade",
+          "Teoria da Relatividade Restrita"
+        ]
+      },
+      {
+        "image": "https://propg.ufabc.edu.br/mnpef-sites/materia-escura/Efeito%20Doppler/Efeito%20Doppler_arquivos/redshfit1.png",
+        "title": " Qual é o nome do efeito retratado acima?",
+        "description": "É a partir dele que se constata a expansão do universo",
         "answer": 2,
         "alternatives": [
-          "Que ele quer estudar o Hulk",
-          "Que ele sabe sobre a SHIELD",
-          "Que eles estão montando uma equipe",
-          "Que Thaddeus lhe deve dinheiro"
+          "Efeito Hubble",
+          "Efeito Hawking",
+          "Efeito Dopler",
+          "Efeito Kepler"
         ]
       },
       {
-        "image": "https://cdn.falauniversidades.com.br/wp-content/uploads/2020/06/12120218/Captain-America-in-Avengers-Endgame-e1591974169632.jpg",
-        "title": "Do que é feito o escudo do Capitão América?",
-        "description": "Essa é para os fãs de verdade",
+        "image": "https://lh3.googleusercontent.com/jutrsZdXGkMJ50YtMzhCtL9HDst3HzbTbotSoO80IfJflYiGI4IWwkh50IohuiwN19LtwtU=s157",
+        "title": "Qual Lei afirma que o universo está em constante expansão?",
+        "description": "É possível perceber a expansão do universo pela constatação do Efeito Dopler",
         "answer": 1,
         "alternatives": [
-          "Adamantium",
-          "Vibranium",
-          "Promécio",
-          "Carbonádio"
+          "Lei de Kepler",
+          "Lei de Hubble",
+          "Lei de Newton",
+          "Lei de Einstein"
         ]
       },
       {
-        "image": "https://terrigen-cdn-dev.marvel.com/content/prod/1x/vision_1.jpg",
-        "title": "Antes de se tornar Vision, qual é o nome do mordomo de IA do Homem de Ferro?",
-        "description": "Nem é tão difícil, vai!",
-        "answer": 1,
+        "image": "https://i1.wp.com/tecnobug.com.br/wp-content/uploads/2017/11/Gigante-vermelha-1.jpg?fit=720%2C405&ssl=1",
+        "title": "Qual é o estágio final da evolução de uma estrela com massa do Sol",
+        "description": "Sempre bom analisar o nosso futuro",
+        "answer": 3,
         "alternatives": [
-          "HOMER",
-          "JARVIS",
-          "ALFRED",
-          "MARVIN"
+          "Gigante Vermelha",
+          "Nebulosa Vermelha",
+          "Buraco Negro",
+          "Anã Branca"
         ]
       },
       {
-        "image": "https://cdn3.movieweb.com/i/article/yqY67ISVpYdlbPE2s1H2vLiQ6xrHR8/798:75/Spider-Man-Homecoming-Peter-Parker-Washington-Dc.jpg",
-        "title": "De que ponto de vista Peter Parker resgata seus colegas de classe em Spider-Man: Homecoming?",
+        "image": "https://s.calendarr.com/upload/articles/rv/or/rvore-mostrando-alteracao-das-estacoes.jpg",
+        "title": "Qual fator permite a ocorrência das estações do ano?",
         "description": "Outra mais recente",
         "answer": 0,
         "alternatives": [
-          "Washington Monument",
-          "Estátua da Liberdade",
-          "Mount Rushmore",
-          "Golden Gate Bridge"
+          "Inclinação do eixo de rotação terreste",
+          "Movimento de translação terrestre",
+          "Variação da temperatura do Sol",
+          "Variação periódica do raio solar"
         ]
       },
       {
-        "image": "https://bbts1.azureedge.net/images/p/full/2018/05/fe70318a-af0b-43e7-8473-8e38ab0dd8cc.jpg",
-        "title": "Qual é a raça alienígena que Loki envia para invadir a Terra em Os Vingadores?",
-        "description": "Vamos exercitar a memória",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Planets2013-unlabeled.jpg/360px-Planets2013-unlabeled.jpg",
+        "title": "Qual planeta funciona como um 'escudo gravitacional' contra asteróides para a Terra",
+        "description": "A foto acima mostra as classes no chamado Diagrama de Hertzsprung-Russell (HR)",
         "answer": 3,
         "alternatives": [
-          "Os skrulls",
-          "The Kree",
-          "The Flerkens",
-          "Os Chitauri"
+          "Saturno",
+          "Marte",
+          "Vênus",
+          "Júpiter"
         ]
       },
       {
-        "image": "https://i0.wp.com/diaadiaes.com.br/wp-content/uploads/2020/09/Chadwick-Boseman.jpeg?resize=960%2C550&ssl=1",
-        "title": "Qual é o verdadeiro nome da Pantera Negra?",
+        "image": "https://static.vecteezy.com/ti/vetor-gratis/p1/1040228-linha-de-ondas-sonoras-coloridas-gr%C3%A1tis-vetor.jpg",
+        "title": "Qual é o caráter da onda sonora?",
         "description": "Uma de presente",
         "answer": 0,
         "alternatives": [
-          "T'Challa",
-          "M'Baku",
-          "N'Jadaka",
-          "N'Jobu"
+          "Mecânica",
+          "Corpuscular",
+          "Eletromagnética",
+          "Massiva"
         ]
       },
       {
-        "image": "https://tecnoblog.net/wp-content/uploads/2019/04/thanos-manopla-do-infinito-700x393.jpeg",
-        "title": "Quem foi o último detentor do Pedra do espaço antes de Thanos reivindicá-lo por sua Manopla do Infinito?",
-        "description": "Essa é mais recente!",
-        "answer": 1,
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlyDwFYhHVP1Rd2F_j-bBudr2Cge0i1OZ7iA&usqp=CAU",
+        "title": "Qual é o nome da constelação acima?",
+        "description": "Nessa constelação estão as famosas Três Marias!",
+        "answer": 3,
         "alternatives": [
-          "Thor",
-          "Loki",
-          "O Colecionador",
-          "Tony Stark"
+          "Ursa Maior",
+          "Escorpião",
+          "Cruzeiro do Sul",
+          "Órion"
         ]
       },
       {
-        "image": "https://www.einerd.com.br/wp-content/uploads/2019/07/Vi%C3%BAva-Negra-filme-capa-890x466.jpg",
-        "title": "Qual nome falso Natasha usa quando conhece Tony?",
-        "description": "Só mais uma!",
+        "image": "https://i.pinimg.com/564x/05/99/80/0599804d44339695f63e7038e8d8cc36.jpg",
+        "title": "Qual é o nome da constelação acima?",
+        "description": "Famosa no Hemifério Sul e importantíssima para a lozalição a partir do céu noturno!",
+        "answer": 0,
+        "alternatives": [
+          "Cruzeiro do Sul",
+          "Leão",
+          "Escorpião",
+          "Cruzeiro do Oriente"
+        ]
+      },
+      {
+        "image": "https://s2.glbimg.com/aThY70s6tVfiAxsXeFtqa1n2FdU=/e.glbimg.com/og/ed/f/original/2016/07/20/apollo_11.jpg",
+        "title": "Durante a missão Apollo 11, qual astronauta permaneceu no Módulo Lunar",
+        "description": "Famosa no Hemifério Sul e importantíssima para a lozalição a partir do céu noturno!",
         "answer": 1,
         "alternatives": [
-          "Natalia Romanoff",
-          "Natalie Rushman",
-          "Nicole Rohan",
-          "Naya Rabe"
+          "Elon Musk",
+          "Michael Collins",
+          "Buzz Aldrin",
+          "Alan Bean"
+        ]
+      },
+      {
+        "image": "https://exame.com/wp-content/uploads/2019/04/2019-04-10t000000z_756580842_rc1e1df4e410_rtrmadp_3_space-exploration-blackhole.jpg?quality=70&strip=info&resize=680,453",
+        "title": "Em que ano foi tirada a primeira doto de um buraco negro",
+        "description": "Katie Bouman permite um feito histórico para a ciência: a captação da imagem de um buraco negro!",
+        "answer": 3,
+        "alternatives": [
+          "1998",
+          "2010",
+          "2018",
+          "2019"
         ]
       }
     ],
@@ -132,12 +155,12 @@
     ],
     "theme": {
       "colors": {
-        "primary": "#3F51B5",
-        "primaryDark": "#182d5d",
-        "secondary": "#E91E63",
-        "mainBg": "#171B35",
+        "primary": "#035AA6",
+        "primaryDark": "#011C40",
+        "secondary": "#05DBF2",
+        "mainBg": "#011126",
         "contrastText": "#F9F9F9",
-        "wrong": "#FF5722",
+        "wrong": "#ae2531",
         "success": "#4CAF50",
         "disabled": "#979797"
       },

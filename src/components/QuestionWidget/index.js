@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Widget from '../Widget';
-import QuestionContent from '../QuestionContent';
+import QuestionContent from './components/QuestionContent';
 
 export default function QuestionWidget({
   question,
