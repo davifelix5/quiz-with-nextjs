@@ -14,7 +14,7 @@ const FooterWrapper = styled.footer`
   }
   a {
     color: white;
-    text-decoration: none;
+    text-decoration: underline;
     transition: .3s;
     &:hover,
     &:focus {
@@ -26,18 +26,17 @@ const FooterWrapper = styled.footer`
   }
 `;
 
-export default function Footer(props) {
+export default function Footer({ authorName, gitHubLink }) {
   return (
-    // eslint-disable-next-line react/jsx-props-no-spreading
-    <FooterWrapper {...props}>
+    <FooterWrapper>
       <a href="https://www.alura.com.br/">
         <img src="https://www.alura.com.br/assets/img/alura-logo-white.1570550707.svg" alt="Logo Alura" />
       </a>
       <p>
         Orgulhosamente criado por
         {' '}
-        <a href="https://github.com/davifelix5" target="_blank" rel="noreferrer noopener">
-          <span>Davi Félix</span>
+        <a href={gitHubLink} target="_blank" rel="noreferrer noopener">
+          {authorName}
         </a>
         {' '}
         durante

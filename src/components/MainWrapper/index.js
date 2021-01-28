@@ -2,9 +2,6 @@ import React from 'react';
 
 import { ThemeProvider } from 'styled-components';
 
-import theme from '../../../styles/theme';
-import data from '../../../data.json';
-
 import GlobalStyle from '../../../styles/GlobalStyle';
 import SiteHead from '../SiteHead';
 import GitHubCorner from '../GitHubCorner';
@@ -13,9 +10,11 @@ import QuizLogo from '../QuizLogo';
 import QuizContainer from '../QuizContainer';
 import QuizBackground from '../QuizBackground';
 
-export default function MainWrapper({ children }) {
+export default function MainWrapper({
+  children, data, gitHubLink,
+}) {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={data.theme}>
       <SiteHead />
       <GlobalStyle />
       <GitHubCorner projectUrl="https://github.com/davifelix5/quiz-with-nextjs" />
@@ -23,7 +22,7 @@ export default function MainWrapper({ children }) {
         <QuizContainer>
           <QuizLogo />
           {children}
-          <Footer />
+          <Footer authorName={data.author} gitHubLink={gitHubLink} />
         </QuizContainer>
       </QuizBackground>
     </ThemeProvider>

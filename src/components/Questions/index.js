@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 
-import data from '../../../data.json';
-
 import Widget from '../Widget';
 import QuestionWidget from '../QuestionWidget';
 import Loader from '../Loader';
 
 export default function Quiz({
+  data,
   setFinished,
   rightQuestions, setRightQuestions,
 }) {
