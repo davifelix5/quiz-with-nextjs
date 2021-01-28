@@ -1,10 +1,9 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 import Link from 'next/link';
-import Widget from '../Widget';
-import ResultsList from '../ResultsList';
 
-import useInterval from '../../hooks/useInterval';
+import Widget from '../Widget';
+import ResultContent from './components/ResultContent';
 
 import data from '../../../data.json';
 
@@ -13,25 +12,20 @@ export default function QuizResult({
   rights,
   total,
 }) {
-  const [delay, setDelay] = useState(100);
-
   const currentPlayer = useRef(null);
 
-  function scrollToPlayerPosition() {
+  useEffect(() => {
     if (currentPlayer.current) {
       currentPlayer.current.scrollIntoView();
-      setDelay(null);
     }
-  }
-
-  useInterval(scrollToPlayerPosition, delay);
+  }, [currentPlayer]);
 
   const isRegistered = data.results.map((item) => item.playerName).includes(playerName);
 
   data.results = isRegistered ? data.results : [
     ...data.results,
     {
-      playerName, rights, total, points: rights * 10,
+      playerName, points: rights * 10,
     },
   ];
 
@@ -43,7 +37,7 @@ export default function QuizResult({
       <Widget.Header>
         Resulados
       </Widget.Header>
-      <Widget.ResultContent>
+      <ResultContent>
         <p>
           Muito bem,
           {' '}
@@ -59,7 +53,7 @@ export default function QuizResult({
           {' '}
           perguntas, parabéns!
         </h1>
-        <ResultsList>
+        <ResultContent.List>
           {orderedResults.map((item, index) => (
             <li
               key={item.playerName}
@@ -80,11 +74,11 @@ export default function QuizResult({
               </p>
             </li>
           ))}
-        </ResultsList>
+        </ResultContent.List>
         <Link href="/">
           Voltar para a Home
         </Link>
-      </Widget.ResultContent>
+      </ResultContent>
     </Widget>
 
   );

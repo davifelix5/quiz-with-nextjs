@@ -1,6 +1,33 @@
 import styled from 'styled-components';
 
-const ResultsList = styled.ul`
+import Widget from '../../../Widget';
+
+const ResultContent = styled(Widget.Content)`
+    h1 {
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 20px
+    }
+    p {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 1;
+        margin-bottom: 8px;
+    }
+    a {
+        text-decoration: none;
+        color: ${({ theme }) => theme.colors.primary};
+        font-weight: bold;
+        align-self: center;
+        padding: 10px;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+`;
+
+ResultContent.List = styled.ul`
     list-style: none;
     max-height: 350px;
     overflow-y: scroll;
@@ -55,7 +82,7 @@ const ResultsList = styled.ul`
         &.highlight {
             background-color: ${({ theme }) => theme.colors.primary};
             p span.medal {
-                border: 3px solid ${({ theme }) => theme.colors.textContrast};
+                border: 3px solid ${({ theme }) => theme.colors.contrastText};
             }
         }
         & + li {
@@ -65,4 +92,4 @@ const ResultsList = styled.ul`
 
 `;
 
-export default ResultsList;
+export default ResultContent;

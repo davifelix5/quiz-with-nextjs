@@ -23,6 +23,28 @@ const Widget = styled.div`
   }
 `;
 
+Widget.Header = styled.header`
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 18px 32px;
+  background-color: ${({ theme }) => theme.colors.primary};
+  
+  * {
+    margin: 0;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  a {
+    margin-right: 15px;
+    font-size: 16px;
+    color: white;
+  }
+`;
+
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
   display: flex;
@@ -52,27 +74,6 @@ Widget.Content = styled.div`
   input:focus {
     border-color: ${({ theme }) => theme.colors.secondary};
     outline: none;
-  }
-`;
-
-Widget.ResultContent = styled(Widget.Content)`
-  h1 {
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1;
-    margin-bottom: 20px
-  }
-  p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1;
-    margin-bottom: 8px;
-  }
-  a {
-    text-decoration: none;
-    color: #9CA9EF;
-    font-weight: bold;
-    align-self: center;
   }
 `;
 
@@ -113,28 +114,6 @@ Widget.List = styled.ul`
       }
     }
 
-`;
-
-Widget.Header = styled.header`
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 18px 32px;
-  background-color: ${({ theme }) => theme.colors.primary};
-  
-  * {
-    margin: 0;
-  }
-
-  p {
-    font-size: 16px;
-  }
-
-  a {
-    margin-right: 15px;
-    font-size: 16px;
-    color: white;
-  }
 `;
 
 export default Widget;
