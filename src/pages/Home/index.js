@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
-import PlayForm from '../PlayForm';
-import External from '../External';
-import MainWrapper from '../MainWrapper';
+import PlayForm from '../../components/PlayForm';
+import External from '../../components/External';
+import MainWrapper from '../../components/MainWrapper';
 
 export default function Home({ data, gitHubUser }) {
   const [name, setName] = useState('');

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 
-import QuizResult from '../QuizResult';
-import Questions from '../Questions';
-import MainWrapper from '../MainWrapper';
+import QuizResult from '../../components/QuizResult';
+import Questions from '../../components/Questions';
+import MainWrapper from '../../components/MainWrapper';
 
 export default function QuizComponet({ gitHubLink, data }) {
   const { questions } = data;
